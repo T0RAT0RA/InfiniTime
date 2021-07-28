@@ -83,7 +83,7 @@ jobs:
         if:   steps.cache-mcuboot.outputs.cache-hit != 'true'  # Install MCUBoot if not found in cache
         run:  |
           cd ${{ runner.temp }}
-          git clone --branch v1.5.0 https://github.com/JuulLabs-OSS/mcuboot
+          git clone --branch v1.7.2 https://github.com/JuulLabs-OSS/mcuboot
 
       - name: Install imgtool dependencies
         run:  |
